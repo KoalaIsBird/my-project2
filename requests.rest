@@ -1,0 +1,12 @@
+## Get notes
+
+GET http://localhost:3001/api/notes
+
+### send a note
+
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "hello"
+}

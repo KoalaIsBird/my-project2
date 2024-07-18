@@ -1,0 +1,21 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "Hello world program for node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo no test specified",
+    "dev": "nodemon index.js"
+  },
+  "author": "Andrew",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.8",
+    "nodemon": "^3.1.4"
+  }
+}
