@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo no test specified",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build:ui": "rm -rf dist && cd ../../p2/notes && npm run build && cp -r dist ../../p3/notes",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Andrew",
   "license": "MIT",
