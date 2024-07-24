@@ -1,12 +1,26 @@
-## Get notes
-
+## get notes
 GET http://localhost:3001/api/notes
 
 ### send a note
-
 POST http://localhost:3001/api/notes
 Content-Type: application/json
 
 {
-    "content": "hello"
+    
+    "important": true
+}
+
+### get a note
+GET http://localhost:3001/api/notes/66a0d1c1f7e33646a8110a9c
+
+### delete note
+DELETE http://localhost:3001/api/notes/66a0d1c1f7e33646a8110a9c
+
+### modify note
+PUT http://localhost:3001/api/notes/669d2d4877d6ff8c54e95f5e
+Content-Type: application/json
+
+{
+    "content": "HTML is easy",
+    "important": false
 }
